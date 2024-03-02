@@ -15,7 +15,10 @@ async function blastTvl(_, _1, _2, { api }) {
   const hlpUnderlyings = [
     "0x2EAd9c6C7cAB1DD3442714A8A8533078C402135A",
     "0x620aa22aA45F59Af91CaFBAd0ab58181FcDBfB08",
+    "0xb9d94A3490bA2482E2D4F21F0E76b92E5661Ded8",
+    "0xCD732d21c1B23A3f84Bb386E9759b5b6A1BcBe39"
   ]
+  console.log(await api.sumTokens({ owner: vaultStorageAddress, tokens: hlpUnderlyings, }))
   return api.sumTokens({ owner: vaultStorageAddress, tokens: hlpUnderlyings, })
 }
 
